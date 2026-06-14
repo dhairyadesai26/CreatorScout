@@ -5,7 +5,7 @@ export const filterSchema = z.object({
   platform: z.string().optional(),
   country: z.string().optional(),
   followers: z.array(z.number()).length(2),
-  showShortlistOnly: z.boolean().optional().default(false),
+  showShortlistOnly: z.boolean().optional(),
 });
 export type FilterFormValues = z.infer<
   typeof filterSchema
