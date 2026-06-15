@@ -144,7 +144,7 @@ export default function LandingPage() {
             upstageX · Creator Marketplace
           </div>
 
-          <h1 className="text-6xl sm:text-7xl lg:text-[88px] font-extrabold tracking-tighter leading-none mb-8 animate-fade-in-up" style={{ animationDelay: "80ms", opacity: 0 }}>
+          <h1 className="text-5xl sm:text-7xl lg:text-[88px] font-extrabold tracking-tighter leading-none mb-8 animate-fade-in-up" style={{ animationDelay: "80ms", opacity: 0 }}>
             <span className="text-foreground block">Find the perfect</span>
             <span className="gradient-text block mt-2">creators</span>
             <span className="text-foreground block mt-2">for your brand.</span>
@@ -160,11 +160,11 @@ export default function LandingPage() {
               trigger={
                 <Button
                   size="lg"
-                  className="h-14 px-10 text-lg font-bold btn-glow group rounded-full shadow-xl shadow-primary/30"
+                  className="h-14 px-8 sm:px-10 text-base sm:text-lg font-bold btn-glow group rounded-full shadow-xl shadow-primary/30 w-full sm:w-auto"
                 >
-                  <Sparkles className="w-5 h-5 mr-2" />
+                  <Sparkles className="w-5 h-5 mr-2 shrink-0" />
                   Start for Free
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200 shrink-0" />
                 </Button>
               }
             />
@@ -174,7 +174,7 @@ export default function LandingPage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="h-14 px-10 text-lg font-bold rounded-full border-border/60 hover:bg-accent/50 backdrop-blur-sm"
+                  className="h-14 px-8 sm:px-10 text-base sm:text-lg font-bold rounded-full border-border/60 hover:bg-accent/50 backdrop-blur-sm w-full sm:w-auto"
                 >
                   Sign In
                 </Button>
@@ -319,17 +319,17 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className="relative z-10 px-6 py-24">
+      <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-24">
         <div className="container mx-auto">
-          <div className="relative rounded-3xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 via-violet-500/5 to-pink-500/10 p-16 text-center">
+          <div className="relative rounded-3xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 via-violet-500/5 to-pink-500/10 p-8 sm:p-16 text-center">
 
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 rounded-full blur-[80px]" />
             <div className="relative z-10">
-              <h2 className="text-5xl font-extrabold tracking-tight text-foreground mb-6">
+              <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground mb-6">
                 Ready to find your{" "}
                 <span className="gradient-text">perfect creator?</span>
               </h2>
-              <p className="text-xl text-muted-foreground mb-10 max-w-xl mx-auto">
+              <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-xl mx-auto">
                 Join upstageX brands who are already discovering and partnering with the world&apos;s top creators.
               </p>
               <AuthDialog
@@ -337,11 +337,11 @@ export default function LandingPage() {
                 trigger={
                   <Button
                     size="lg"
-                    className="h-14 px-12 text-lg font-bold btn-glow rounded-full shadow-2xl shadow-primary/30 group"
+                    className="h-14 px-6 sm:px-12 text-base sm:text-lg font-bold btn-glow rounded-full shadow-2xl shadow-primary/30 group w-full sm:w-auto"
                   >
-                    <Sparkles className="w-5 h-5 mr-2" />
+                    <Sparkles className="w-5 h-5 mr-2 shrink-0" />
                     Get Started — It&apos;s Free
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200 shrink-0" />
                   </Button>
                 }
               />

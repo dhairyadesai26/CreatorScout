@@ -21,9 +21,12 @@ import {
   X,
   Sparkles,
   Bookmark,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { Switch } from "@/components/ui/switch";
+import { useState } from "react";
 
 export default function FilterPanel() {
   const { isAuthenticated } = useAuth();
@@ -65,9 +68,26 @@ export default function FilterPanel() {
     return `${n}`;
   };
 
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
   return (
-    <div className="filter-sidebar">
-      <div className="glass-card rounded-2xl border border-border/60 overflow-hidden">
+    <div className="lg:sticky lg:top-24 lg:h-fit lg:max-h-[calc(100vh-120px)] lg:overflow-y-auto w-full">
+      <div className="lg:hidden mb-4">
+        <Button
+          type="button"
+          variant="outline"
+          onClick={() => setIsMobileOpen(!isMobileOpen)}
+          className="w-full flex justify-between items-center glass-card border-primary/20 h-12"
+        >
+          <div className="flex items-center gap-2 font-semibold">
+            <SlidersHorizontal className="h-4 w-4 text-primary" />
+            <span>Filters & Search</span>
+          </div>
+          {isMobileOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+        </Button>
+      </div>
+
+      <div className={`glass-card rounded-2xl border border-border/60 overflow-hidden ${isMobileOpen ? 'block' : 'hidden lg:block'}`}>
         <div className="flex items-center justify-between border-b border-border/50 bg-muted/20 px-5 py-4">
           <div className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/15 text-primary">

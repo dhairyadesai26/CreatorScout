@@ -71,7 +71,6 @@ const statConfigs: StatConfig[] = [
 ];
 
 export default function StatsSection() {
-  // Always fetch all creators for global stats (no filters)
   const { data: response, isLoading } = useCreators({});
 
   return (
@@ -79,7 +78,7 @@ export default function StatsSection() {
       {statConfigs.map((stat, idx) => (
         <div
           key={stat.key}
-          className={`glass-card stat-shimmer rounded-xl border p-4 ${stat.borderColor} animate-fade-in-scale`}
+          className={`glass-card stat-shimmer rounded-xl border p-4 ${stat.borderColor} animate-fade-in-scale ${idx === 4 ? "col-span-2 sm:col-span-1" : ""}`}
           style={{ animationDelay: `${idx * 75}ms`, opacity: 0 }}
         >
 

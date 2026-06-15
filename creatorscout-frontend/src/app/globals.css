@@ -359,13 +359,7 @@
 .delay-450 { animation-delay: 450ms; }
 
 /* Filter panel sticky */
-.filter-sidebar {
-  position: sticky;
-  top: 24px;
-  height: fit-content;
-  max-height: calc(100vh - 48px);
-  overflow-y: auto;
-}
+/* Handled by Tailwind classes in FilterPanel.tsx */
 
 /* Input focus ring override for our dark theme */
 input:focus, select:focus, textarea:focus {

@@ -54,7 +54,7 @@ export default function DashboardHeader() {
         </div>
       </div>
 
-      <div className="flex flex-col items-end gap-4 hidden md:flex">
+      <div className="flex flex-col items-start md:items-end gap-4 flex md:mt-0">
         {isAuthenticated && user && (
           <div className="flex items-center gap-3 bg-secondary/50 border border-border/50 rounded-full px-4 py-1.5">
             <Badge variant="secondary" className="h-5 px-2 text-[10px] uppercase tracking-wider font-bold bg-primary/20 text-primary hover:bg-primary/20 border-primary/30">
