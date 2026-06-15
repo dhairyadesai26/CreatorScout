@@ -218,7 +218,7 @@ CreatorScout
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CreatorScout.git
+git clone https://github.com/dhairyadesai26/CreatorScout.git
 
 cd CreatorScout
 ```
@@ -284,7 +284,7 @@ http://localhost:3001
 id
 email
 password
-createdAt
+Shortlist
 ```
 
 ## Creator
