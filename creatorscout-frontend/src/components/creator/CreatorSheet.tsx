@@ -239,7 +239,7 @@ export default function CreatorSheet({
               </h3>
             </div>
 
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
 
               <div className="rounded-xl bg-muted/25 border border-border/40 p-3 text-center">
                 <div className="flex items-center justify-center gap-1 mb-1">
@@ -265,7 +265,7 @@ export default function CreatorSheet({
                 </p>
               </div>
 
-              <div className="rounded-xl bg-muted/25 border border-border/40 p-3 flex items-center justify-center">
+              <div className="rounded-xl bg-muted/25 border border-border/40 p-3 flex items-center justify-center col-span-2 sm:col-span-1">
                 <ScoreGauge score={creator.creatorScore} />
               </div>
             </div>
@@ -333,27 +333,27 @@ export default function CreatorSheet({
 
           <Separator className="bg-border/50" />
 
-          <div className="flex gap-3 pb-2">
+          <div className="flex flex-col sm:flex-row gap-3 pb-2">
             <Button
               id="shortlist-creator-btn"
               onClick={handleShortlistClick}
               disabled={isMutating}
-              className={`flex-1 gap-2 font-semibold ${
+              className={`flex-1 gap-2 font-semibold w-full sm:w-auto ${
                 shortlisted
                   ? "bg-primary/90 text-primary-foreground hover:bg-destructive/90"
                   : "btn-glow"
               }`}
               size="lg"
             >
-              <Heart className={`h-4 w-4 ${shortlisted ? "fill-current" : ""}`} />
-              {shortlisted ? "Remove from Shortlist" : "Add to Shortlist"}
+              <Heart className={`h-4 w-4 shrink-0 ${shortlisted ? "fill-current" : ""}`} />
+              <span className="truncate">{shortlisted ? "Remove from Shortlist" : "Add to Shortlist"}</span>
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="gap-2 border-border/60 hover:border-primary/40 hover:bg-primary/10"
+              className="gap-2 border-border/60 hover:border-primary/40 hover:bg-primary/10 w-full sm:w-auto"
             >
-              <ExternalLink className="h-4 w-4" />
+              <ExternalLink className="h-4 w-4 shrink-0" />
               Profile
             </Button>
           </div>

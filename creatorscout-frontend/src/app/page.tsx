@@ -97,8 +97,8 @@ export default function LandingPage() {
 
       <header
         className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
-            ? "border-b border-border/40 bg-background/80 backdrop-blur-2xl shadow-lg shadow-black/10"
-            : "border-b border-transparent bg-transparent"
+          ? "border-b border-border/40 bg-background/80 backdrop-blur-2xl shadow-lg shadow-black/10"
+          : "border-b border-transparent bg-transparent"
           }`}
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -141,7 +141,7 @@ export default function LandingPage() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
             </span>
-            upstageX · Creator Marketplace
+            CreatorScout · Creator Marketplace
           </div>
 
           <h1 className="text-5xl sm:text-7xl lg:text-[88px] font-extrabold tracking-tighter leading-none mb-8 animate-fade-in-up" style={{ animationDelay: "80ms", opacity: 0 }}>
@@ -319,29 +319,29 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-24">
+      <section className="relative z-10 px-6 py-24">
         <div className="container mx-auto">
-          <div className="relative rounded-3xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 via-violet-500/5 to-pink-500/10 p-8 sm:p-16 text-center">
+          <div className="relative rounded-3xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 via-violet-500/5 to-pink-500/10 p-16 text-center">
 
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 rounded-full blur-[80px]" />
             <div className="relative z-10">
-              <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground mb-6">
+              <h2 className="text-5xl font-extrabold tracking-tight text-foreground mb-6">
                 Ready to find your{" "}
                 <span className="gradient-text">perfect creator?</span>
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-xl mx-auto">
-                Join upstageX brands who are already discovering and partnering with the world&apos;s top creators.
+              <p className="text-xl text-muted-foreground mb-10 max-w-xl mx-auto">
+                Join CreatorScout brands who are already discovering and partnering with the world&apos;s top creators.
               </p>
               <AuthDialog
                 defaultTab="register"
                 trigger={
                   <Button
                     size="lg"
-                    className="h-14 px-6 sm:px-12 text-base sm:text-lg font-bold btn-glow rounded-full shadow-2xl shadow-primary/30 group w-full sm:w-auto"
+                    className="h-14 px-12 text-lg font-bold btn-glow rounded-full shadow-2xl shadow-primary/30 group"
                   >
-                    <Sparkles className="w-5 h-5 mr-2 shrink-0" />
+                    <Sparkles className="w-5 h-5 mr-2" />
                     Get Started — It&apos;s Free
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200 shrink-0" />
+                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
                   </Button>
                 }
               />
@@ -359,7 +359,7 @@ export default function LandingPage() {
             <span>Creator<span className="text-primary">Scout</span></span>
           </div>
           <p className="text-xs text-muted-foreground">
-            © 2026 upstageX · All rights reserved · Powered by real-time data
+            © 2026 CreatorScout · All rights reserved · Powered by real-time data
           </p>
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <TrendingUp className="h-3.5 w-3.5 text-emerald-400" />

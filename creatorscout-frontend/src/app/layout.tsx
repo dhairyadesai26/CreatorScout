@@ -20,12 +20,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "CreatorScout — Discover & Partner with Top Creators",
   description:
-    "upstageX's creator discovery platform. Search, filter, and connect with the best YouTube and Instagram creators for your brand campaigns.",
+    "CreatorScout's creator discovery platform. Search, filter, and connect with the best YouTube and Instagram creators for your brand campaigns.",
   keywords:
     "creator discovery, influencer marketing, YouTube creators, Instagram influencers, brand campaigns",
   openGraph: {
     title: "CreatorScout — Discover & Partner with Top Creators",
-    description: "upstageX's creator discovery platform for brands.",
+    description: "CreatorScout's creator discovery platform for brands.",
     type: "website",
   },
 };

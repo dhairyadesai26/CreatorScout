@@ -108,7 +108,7 @@ export default function AuthDialog({
             <Input
               id="email"
               type="email"
-              placeholder="brand@upstageX.com"
+              placeholder="brand@creatorscout.com"
               {...register("email")}
               className={errors.email ? "border-destructive focus-visible:ring-destructive" : ""}
             />

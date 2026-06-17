@@ -24,7 +24,7 @@ export default function DashboardHeader() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
             </span>
-            upstageX · Creator Marketplace
+            CreatorScout · Creator Marketplace
           </div>
 
           {isAuthenticated && (
